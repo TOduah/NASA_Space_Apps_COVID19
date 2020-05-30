@@ -4,6 +4,12 @@ Team: Dragons
 
 Motto: Reaching Beyond Infinity
 
+Contributors:
++ Tobenna Oduah
++ Jordan Franklin
++ Neil Patel
++ Catherine Nguyen
+
 ---
 ### Installing the Dependencies
 1. Open Terminal
@@ -16,4 +22,4 @@ Now you have all of the required depenencies for this Web App!
 ### Using This Program
 1. Download the dependencies
 2. Run the app.py file
-3. TBD
+3. Go to your browser and navigate to the newly created Web App (Link is seen in the terminal)
