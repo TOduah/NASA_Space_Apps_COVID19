@@ -1,1 +1,3 @@
-# NASA_Space_Apps_COVID19
+# [NASA] Space Apps COVID19 Challenge 2020
+Team: Dragons
+Motto: Reaching Beyond Infinity
