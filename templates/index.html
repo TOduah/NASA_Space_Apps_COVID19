@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Human Factors | Team Dragon</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <style>
         .topnav {
             overflow: hidden;
@@ -68,6 +69,7 @@
     <main>
         <h2>NASA Space Apps COVID-19 Challenge</h2>
         <h2>Team Dragons</h2>
+        <canvas id="myChart"></canvas>
 
         <p>
             Content here,,,
@@ -82,6 +84,26 @@
 			<br>
 		</p>
 	</footer>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            // The type of chart we want to create
+            type: 'line',
 
+            // The data for our dataset
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+
+            // Configuration options go here
+            options: {}
+        });
+    </script>
 </body>
 </html>
