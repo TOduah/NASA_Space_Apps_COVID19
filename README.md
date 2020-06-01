@@ -37,3 +37,4 @@ Now you have all of the required depenencies for this Web App!
 + Flask
 + Pandas
 + Numpy
++ Matplotlib
