@@ -16,7 +16,7 @@ Contributors:
 2. Navigate to the directory containing these files
 3. Type: py -m pip install -r requirements.txt 
 
-Now you have all of the required depenencies for this Web App!
+Now you have all of the required dependencies for this Web App!
 
 ---
 ### Using This Program
