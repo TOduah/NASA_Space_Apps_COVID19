@@ -1,9 +1,10 @@
 import pandas as pd 
 import numpy as np
+import csv
 from datetime import datetime
 from matplotlib import pyplot as plt
 
-states = pd.read_csv("states_daily_4pm_et.csv")
+states = pd.read_csv("Space Apps/states_daily_4pm_et.csv")
 
 for value in states['date']:
 
