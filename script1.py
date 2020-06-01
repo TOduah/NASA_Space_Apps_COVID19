@@ -4,16 +4,16 @@ import csv
 from datetime import datetime
 from matplotlib import pyplot as plt
 
-states = pd.read_csv("Space Apps/states_daily_4pm_et.csv")
+states = pd.read_csv("Space_Apps/states_daily_4pm_et.csv")
 
-for value in states['date']:
+# for value in states['date']:
 
-  datetimeobject = datetime.strptime(str(value),'%Y%m%d')
-  new_value = datetimeobject.strftime('%m-%d-%Y')
-  states.loc['date']= new_value
-  states.replace(to_replace = value, value = new_value, inplace = True)
+#   datetimeobject = datetime.strptime(str(value),'%Y%m%d')
+#   new_value = datetimeobject.strftime('%m-%d-%Y')
+#   states.loc['date']= new_value
+#   states.replace(to_replace = value, value = new_value, inplace = True)
 
-states['date'] =  pd.to_datetime(states['date'], infer_datetime_format=True)
+# states['date'] =  pd.to_datetime(states['date'], infer_datetime_format=True)
 
 def get_state_info(name):
    select_indices = list(np.where(states["state"] == name)[0])
@@ -25,10 +25,11 @@ def get_state_info(name):
 
 date, pos, _ = get_state_info('NY')           #input any state name
 plt.plot(date, pos)
-
+plt.show()
+plt.savefig("Space_Apps/NY.jpg")
 
 fig,ax = plt.subplots(1)
-manhat = pd.read_csv("NY_36061_mob.csv")
+manhat = pd.read_csv("Space_Apps/NY_36061_mob.csv")
 manhat['date'] =  pd.to_datetime(manhat['date'], infer_datetime_format=True)
 
 manhat['Rolling_Mean'] = manhat['mobility_driving'].rolling(window = 15).mean()
