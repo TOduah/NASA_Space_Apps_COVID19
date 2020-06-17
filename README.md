@@ -38,3 +38,6 @@ Now you have all of the required dependencies for this Web App!
 + Pandas
 + Numpy
 + Matplotlib
+---
+### What it Looks Like
+<img src="web_app_image.png" width="100" height="10">
