@@ -40,4 +40,4 @@ Now you have all of the required dependencies for this Web App!
 + Matplotlib
 ---
 ### What it Looks Like
-<img src="web_app_image.PNG" width="100" height="10">
+<img src="web_app_image.PNG">
